@@ -8,9 +8,10 @@ env:
   MEANING_OF_LIFE: ${{secrets.MEANING_OF_LIFE}}    
   
 jobs:
+  runs:
+    using: node16
   check:
     runs-on: ubuntu-latest
-    using: node16
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies

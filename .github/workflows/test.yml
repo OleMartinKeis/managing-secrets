@@ -7,9 +7,11 @@ env:
   
   MEANING_OF_LIFE: ${{secrets.MEANING_OF_LIFE}}    
   
-jobs:
+
   runs:
     using: node16
+    
+jobs:
   check:
     runs-on: ubuntu-latest
     steps:
